@@ -126,7 +126,7 @@ def main():
     f.close()
     lines = (l for l in _process(opts, lines))
     for line in _replaceNewline(lines):
-       print line,
+       print (line,)
 
 if __name__ == "__main__":
     main()
